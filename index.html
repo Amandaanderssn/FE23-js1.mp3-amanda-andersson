@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"
+      defer
+    ></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <h1>Miniprojekt 3 - Rest countries</h1>
+    <p>
+      Write either the name of a country or any language of your choice in the
+      box below and mark one the coresponding options. You will receive
+      information regarding the country you choose. Search results with more
+      than one applicable "answer" will automatically be assorted by population.
+    </p>
+    <form>
+      <input type="text" id="textInput" />
+      <input
+        type="radio"
+        value="name"
+        name="nameOrLanguage"
+        id="nameRadio"
+        checked
+      />
+      <label for="nameRadio">Country name</label>
+      <input
+        type="radio"
+        value="lang"
+        name="nameOrLanguage"
+        id="languageRadio"
+      />
+      <label for="languageRadio">Language</label>
+      <button type="submit">Get countries</button>
+    </form>
+    <div id="infoContainer">
+      <div id="errorContainer"></div>
+
+      <!-- sökresultatet ska visas här -->
+    </div>
+  </body>
+</html>

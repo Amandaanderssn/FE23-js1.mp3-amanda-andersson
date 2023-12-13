@@ -1,0 +1,21 @@
+body {
+  max-width: 60%;
+  margin: auto;
+  text-align: center;
+  background-color: lightgreen;
+}
+
+h1 {
+  text-align: center;
+}
+
+#nameRadio,
+#languageRadio,
+button {
+  cursor: pointer;
+}
+
+#infoContainer {
+  border: 1px solid black;
+  margin-top: 1rem;
+}
